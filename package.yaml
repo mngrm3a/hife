@@ -20,6 +20,8 @@ description:         Please see the README on GitHub at <https://github.com/mngr
 
 dependencies:
 - base >= 4.7 && < 5
+- gloss
+- vector
 
 ghc-options:
 - -Wall
