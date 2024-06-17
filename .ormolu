@@ -1,0 +1,4 @@
+module Lens.Micro.Platform exports "microlens" Lens.Micro
+module Lens.Micro.Platform exports "microlens-ghc" Lens.Micro.GHC
+module Lens.Micro.Platform exports "microlens-mtl" Lens.Micro.Mtl
+module Lens.Micro.Platform exports "microlens-th" Lens.Micro.TH

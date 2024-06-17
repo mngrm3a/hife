@@ -1,0 +1,10 @@
+cradle:
+  cabal:
+    - path: "src"
+      component: "lib:hife"
+
+    - path: "app/Main.hs"
+      component: "hife:exe:hife-exe"
+
+    - path: "test"
+      component: "hife:test:hife-test"
