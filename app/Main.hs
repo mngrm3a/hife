@@ -12,7 +12,7 @@ main = do
   Gloss.simulate
     Gloss.FullScreen
     Gloss.white
-    1
+    4
     (mkWorld scrSize 20)
     renderWorld
     (const updateWorld)
@@ -29,7 +29,7 @@ mkWorld winSize@(winWidth, winHeight) cellSize =
     mkGrid
       (winWidth `div` cellSize)
       (winHeight `div` cellSize)
-      [(c, r) | c <- [1 .. 40], r <- [1 .. 10]]
+      [(c + o, r) | o <- [1 .. 10], r <- [1 .. 11], c <- [0 .. 55]]
 
 renderWorld :: World -> Gloss.Picture
 renderWorld (World ws@(w, h) s g) =
